@@ -1,7 +1,7 @@
 let deadline = new Date('Dec 31 2021 00:00:00');
 
 function count (){
-    let now = new Date('Dec 31 2021');
+    let now = new Date();
     gap = deadline - now;
     let days = Math.floor(gap / 1000 / 60 / 60 / 24);
     let hours = Math.floor(gap / 1000 / 60 / 60) % 24;
