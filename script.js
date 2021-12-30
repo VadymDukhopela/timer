@@ -1,16 +1,15 @@
 let deadline = new Date('Dec 31 2021 00:00:00');
 
 function count (){
-    let now = new Date();
+    let now = new Date('Dec 31 2021');
     gap = deadline - now;
-
     let days = Math.floor(gap / 1000 / 60 / 60 / 24);
     let hours = Math.floor(gap / 1000 / 60 / 60) % 24;
     let minutes = Math.floor(gap / 1000 / 60) % 60;
     let seconds = Math.floor(gap / 1000) % 60;
 
-    if(gap < 0){
-        days = days + 365;
+    if(gap < 1){
+        alert('хапиздую')
     }else{
         document.getElementById('days__info').innerText = days + ' Дней';
         document.getElementById('hours__info').innerText = hours + ' Часов';
