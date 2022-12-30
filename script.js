@@ -1,4 +1,4 @@
-let deadline = new Date('Dec 31 2021 00:00:00');
+let deadline = new Date('Dec 31 2022 00:00:00');
 
 function count (){
     let now = new Date();
